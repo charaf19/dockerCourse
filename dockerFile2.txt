@@ -1,0 +1,9 @@
+#base iamge : alpine i sthe smallest linux image 
+FROM alpine
+
+#package or dep 
+RUN apk add --update redis
+ 
+
+#commands to run on 
+CMD [ "redis-server" ]
